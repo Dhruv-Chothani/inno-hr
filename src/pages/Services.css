@@ -1,0 +1,340 @@
+.services-page {
+  width: 100%;
+}
+
+/* Services Header */
+.services-header {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--color-primary-blue) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.services-header-content h1 {
+  font-size: 3rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.services-header-content p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Services Intro Section */
+.services-intro {
+  padding: 4rem 2rem;
+  background-color: var(--color-white);
+}
+
+.services-intro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.intro-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  height: 400px;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-content p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+.intro-benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.benefit-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-accent-red);
+  color: var(--color-white);
+  border-radius: 50%;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.benefit-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.benefit-item p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Main Services Section */
+.main-services-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-neutral-bg);
+}
+
+.main-services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-white);
+}
+
+.how-it-works-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step-card {
+  background: linear-gradient(135deg, var(--color-neutral-light) 0%, var(--color-neutral-bg) 100%);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.step-card h3 {
+  font-size: 1.25rem;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+}
+
+.step-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Recruitment Section */
+.recruitment-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-neutral-bg);
+}
+
+.recruitment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.recruitment-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  height: 400px;
+}
+
+.recruitment-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recruitment-content h2 {
+  font-size: 2rem;
+  color: var(--color-text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.recruitment-content p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.recruitment-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recruitment-list li {
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--color-text-primary);
+  font-size: 1rem;
+}
+
+.recruitment-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-red);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cta-link {
+  display: inline-block;
+  color: var(--color-primary-blue);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.cta-link:hover {
+  color: var(--color-accent-red);
+}
+
+/* Services CTA Section */
+.services-cta-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--color-primary-blue) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+}
+
+.services-cta-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-cta-container h2 {
+  font-size: 2.5rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.services-cta-container p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .services-header {
+    padding: 2rem 1rem;
+  }
+
+  .services-header-content h1 {
+    font-size: 2rem;
+  }
+
+  .services-intro {
+    padding: 2rem 1rem;
+  }
+
+  .services-intro-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-image {
+    height: 300px;
+  }
+
+  .main-services-section {
+    padding: 2rem 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-it-works-section {
+    padding: 2rem 1rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recruitment-section {
+    padding: 2rem 1rem;
+  }
+
+  .recruitment-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .recruitment-image {
+    height: 300px;
+  }
+
+  .recruitment-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .services-cta-section {
+    padding: 2rem 1rem;
+  }
+
+  .services-cta-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .services-cta-container p {
+    font-size: 1rem;
+  }
+}

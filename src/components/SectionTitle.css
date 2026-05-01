@@ -1,0 +1,42 @@
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-title.centered {
+  text-align: center;
+  align-items: center;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.section-title .highlight {
+  color: var(--color-accent-red);
+}
+
+.section-title p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+}
+
+.section-title.centered p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-title p {
+    font-size: 0.95rem;
+  }
+}
